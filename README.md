@@ -23,7 +23,7 @@ Rollup has been configured to use postcss with the tailwind plugin. The css is b
 
 `npm run build` builds the application to `public/bundle.js`, along with a sourcemap file for debugging.
 
-`npm start` launches a server, using [serve](https://github.com/zeit/serve). Navigate to [localhost:3000](http://localhost:3000).
+`npm start` launches a server, using [serve](https://github.com/zeit/serve). Navigate to [localhost:5000](http://localhost:5000).
 
 `npm run watch` will continually rebuild the application as your source files change.
 
