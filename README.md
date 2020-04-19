@@ -1,4 +1,4 @@
-# rollup-tailwind-boilerplate
+# rollup-tailwindcss-alpinejs-starter
 
 This repo contains a bare-bones example of how to create an application using Rollup, and the postcss plugic tailwindcss. It also imports an example module from `node_modules` and converts it from CommonJS.
 
