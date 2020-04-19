@@ -1,6 +1,6 @@
 # rollup-tailwindcss-alpinejs-starter
 
-This repo contains a minimal working example of how to create an application using Rollup, and the postcss plugic tailwindcss. It also imports aplinejs that pairs nicely with tailwindcss to create a richer interactions more.
+This repo contains a minimal working example of how to create an application using Rollup, and the postcss plugic tailwindcss. It also imports aplinejs that pairs nicely with tailwindcss to create rich interactions.
 
 ## Getting started
 
@@ -19,4 +19,4 @@ cd rollup-tailwind-boilerplate && npm install
 
 `npm run watch` will continually rebuild the application as your source files change.
 
-Note that postcss is configured to only create a smaller production output when rollup does not run i watchmode. This means use the build command to create your production bundle and the start command for development. 
+Note that postcss is configured to only create a smaller production output when rollup does not run in watchmode. This means use the build command to create your production bundle and the start command for development. 
