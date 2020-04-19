@@ -3,7 +3,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import { terser } from 'rollup-plugin-terser'
 import postcss from 'rollup-plugin-postcss'
 
-const production = !process.env.ROLLUP_WATCH
+const isProduction = !process.env.ROLLUP_WATCH
 
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
@@ -31,13 +31,13 @@ export default {
             plugins: [
                 require('tailwindcss'),
                 require('autoprefixer'),
-                ...production
+                ...isProduction
                     ? [purgecss]
                     : []
             ]
         }),
         resolve(),
         commonjs(),
-        production && terser(),
+        isProduction && terser(),
     ]
 }
