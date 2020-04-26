@@ -1,8 +1,8 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
-import typescript from '@rollup/plugin-typescript';
 
 const isProduction = !process.env.ROLLUP_WATCH;
 
@@ -24,7 +24,12 @@ export default {
   plugins: [
     typescript(),
     postcss({
-      plugins: [require('tailwindcss'), require('autoprefixer'), ...(isProduction ? [purgecss] : [])],
+      plugins: [
+        require('precss'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+        ...(isProduction ? [purgecss] : []),
+      ],
     }),
     resolve(),
     commonjs(),
